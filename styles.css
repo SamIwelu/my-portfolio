@@ -1,0 +1,162 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    position: relative;
+    color: #ff4757;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+    color: #ff4757;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: none; /* Initially hidden */
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4757;
+}
+
+/* General Content Styling */
+.container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px auto;
+    height: 150px auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #ff4757;
+}
+
+/* Page Specific Styling */
+#about-samuel, #software-development, #filmmaking, #contact {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+#about-samuel h2, #software-development h2, #filmmaking h2, #contact h2 {
+    color: #ff4757;
+}
+
+.about-general, .about-filmaking, .about-softwaredev {
+    background-color: #ff4757;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #ff4757;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #e84118;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 2em;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff4757;
+}
+
+/* Toggle Menu */
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 1000; /* Ensure button is clickable */
+}
+
+.hidden {
+    display: none;
+}
+
+#nav-menu ul.hidden {
+    display: block; /* Reveal menu on click */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Development</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="mainheader">Samuel Iwelu</h1>
+      <nav id="nav-menu">
+        <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+          ☰
+        </button>
+        <ul class="hidden">
+          <li><a href="mywebsite.html">Main Page</a></li>
+          <li><a href="filmmaking.html">Filmmaking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+      <h2>Software Development</h2>
+    </header>
+    <div id="software-development" class="container">
+      <p>
+        Welcome to my Software Development page. Here you will find information
+        about my projects and experience in software development.
+      </p>
+      <header class="about-softwaredev" id="about-softwaredev">About</header>
+      <p>
+        Samuel Iwelu is a dedicated and innovative software engineer with a
+        robust background in mobile app development, UI/UX design, and front-end
+        and back-end programming, utilizing tools such as Flutter, Dart, Django,
+        React, JavaScript, HTML, CSS, Python, and SQL. His experience includes
+        leading projects, implementing design research, and ensuring
+        high-quality digital service delivery. Proficient in Agile methodologies
+        and version control systems like GitHub, Samuel excels in collaborative
+        environments, consistently meeting tight deadlines and producing
+        meticulous documentation. With strong communication skills and a
+        commitment to excellence, he delivers creative solutions that align with
+        corporate strategies and client needs.
+      </p>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector("#nav-menu ul");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

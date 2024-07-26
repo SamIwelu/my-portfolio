@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="mainheader">Samuel Iwelu</h1>
+      <nav id="nav-menu">
+        <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+          ☰
+        </button>
+        <ul class="hidden">
+          <li><a href="software-development.html">Software Development</a></li>
+          <li><a href="filmmaking.html">Filmmaking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="image-container">
+      <img
+        src="image/1613720860518.jpg"
+        alt="Image of Samuel Iwelu"
+        class="profile-image"
+      />
+    </header>
+    <div id="about-samuel" class="container">
+      <header class="about-general" id="about-general">About</header>
+      <p class="about-samuel">
+        Samuel is an enthusiastic and multifaceted professional with a keen
+        interest in both filmmaking and software development, seamlessly
+        blending creative vision with technical expertise. With a background in
+        crafting compelling visual narratives and hands-on experience in
+        developing innovative software solutions, Samuel excels in creating
+        immersive multimedia projects. Proficient in various filmmaking
+        techniques, including directing, editing, and cinematography, while also
+        adept in programming languages and development tools such as Python,
+        JavaScript, and React. Passionate about leveraging technology to enhance
+        storytelling, Samuel is committed to pushing the boundaries of digital
+        creativity and delivering engaging user experiences.
+      </p>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector("#nav-menu ul");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmmaking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="mainheader">Samuel Iwelu</h1>
+      <nav id="nav-menu">
+        <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+          ☰
+        </button>
+        <ul class="hidden">
+          <li><a href="mywebsite.html">Main Page</a></li>
+          <li><a href="software-development.html">Software Development</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+      <h2>Filmmaking</h2>
+    </header>
+    <div id="filmmaking" class="container">
+      <p>
+        Welcome to my Filmmaking page. Here you will find information about my
+        projects and experience in filmmaking.
+      </p>
+      <header class="about-filmaking" id="about-filmaking">About</header>
+      <p>
+        Samuel is a passionate and creative filmmaker with a strong background
+        in visual storytelling and a keen eye for detail. With experience in
+        directing, editing, and cinematography, Samuel excels in crafting
+        compelling narratives that captivate audiences. Skilled in various
+        filmmaking techniques and proficient with industry-standard tools,
+        Samuel brings a unique blend of artistic vision and technical expertise
+        to every project. Driven by a love for cinema and a commitment to
+        pushing creative boundaries, Samuel is dedicated to producing
+        high-quality, impactful films that leave a lasting impression.
+      </p>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector("#nav-menu ul");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
